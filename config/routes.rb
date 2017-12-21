@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  get "/bemvindo" => "home#index"
   get 'home/index'
   root "home#index"
+
+  #Criar as rotas pelo resource (recurso)
   resources :phones
   resources :addresses
   resources :contacts
