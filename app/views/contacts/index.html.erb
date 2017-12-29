@@ -18,7 +18,7 @@
       <tr>
         <td><%= contact.name %></td>
         <td><%= contact.email %></td>
-        <td><%= contact.kind %></td>
+        <td><%= contact.kind.description %></td>
         <td><%= contact.rmk %></td>
         <td><%= link_to 'Show', contact %></td>
         <td><%= link_to 'Edit', edit_contact_path(contact) %></td>

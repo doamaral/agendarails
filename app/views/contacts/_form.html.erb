@@ -27,6 +27,17 @@
   </div>
 
   <div class="field">
+    <%= form.fields_for :address do |address_fields| %>
+      <%= address_fields.label :street %>
+      <%= address_fields.text_field :street %>
+      <%= address_fields.label :city %>
+      <%= address_fields.text_field :city %>
+      <%= address_fields.label :state %>
+      <%= address_fields.text_field :state %>
+    <% end %>
+  </div>
+
+  <div class="field">
     <%= form.label :rmk %>
     <%= form.text_area :rmk, id: :contact_rmk %>
   </div>

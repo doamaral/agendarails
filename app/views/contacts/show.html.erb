@@ -12,9 +12,14 @@
 
 <p>
   <strong>Kind:</strong>
-  <%= @contact.kind %>
+  <%= @contact.kind.description %>
 </p>
+<p>
+  <strong>Address:</strong>
+  <%= @contact.address.street %> -
+  <%= @contact.address.city %>/<%= @contact.address.state %>
 
+</p>
 <p>
   <strong>Rmk:</strong>
   <%= @contact.rmk %>
