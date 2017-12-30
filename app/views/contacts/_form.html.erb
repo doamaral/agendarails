@@ -30,10 +30,13 @@
     <%= form.fields_for :address do |address_fields| %>
       <%= address_fields.label :street %>
       <%= address_fields.text_field :street %>
+
       <%= address_fields.label :city %>
       <%= address_fields.text_field :city %>
+
       <%= address_fields.label :state %>
-      <%= address_fields.text_field :state %>
+      <% #options_for_state -> Helper criado para listar os Estados Brasileiros %>
+      <%= address_fields.select :state, options_for_state(@contact.address.state) %>
     <% end %>
   </div>
 

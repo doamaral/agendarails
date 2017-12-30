@@ -1,0 +1,21 @@
+
+# available at http://guides.rubyonrails.org/i18n.html.
+
+"pt_Br":
+  activerecord:
+    models:
+      contact:
+        one: Contato
+        other: Contatos
+    attributes:
+      contact:
+        name: Nome
+        email: E-mail
+        kind: Tipo do Contato
+        kind_id: Tipo do Contato
+        rmk: Observação
+      address:
+        street: Logradouro
+        city: Cidade
+        state: Estado
+        contact_id: Contato

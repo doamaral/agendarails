@@ -3,3 +3,8 @@
 
 "pt_Br":
   hello: "Chega mais!"
+  button:
+    new: "Criar novo Contato"
+    show: "Exibir"
+    edit: "Editar"
+    destroy: "Deletar"

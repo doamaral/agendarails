@@ -1,0 +1,6 @@
+
+# available at http://guides.rubyonrails.org/i18n.html.
+
+"pt_Br":
+  messages:
+    delete: "Você tem certeza que deseja remover esse registro?"

@@ -8,7 +8,7 @@ namespace :utils do
         name: Faker::Name.name,
         email: Faker::Internet.email,
         kind: Kind.all.sample,
-        rmk: Faker::ChuckNorris.fact
+        rmk: LeroleroGenerator.sentence([1,2,3,4].sample)
       )
       puts "Criando Contato ##{i+1} - #{contact_instance.name}"
     end
