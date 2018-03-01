@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Insert em uma relação 1:1: params = {contact:{name:"john doe", email: "jd@john.corp", rmk:"obs...", address_attributes:{street:"a", city:"a",state:"b"}}}
+* Comando muito bom para verificar erros no Console:
+    creation = Contact.create(params[:contact])
+    creation.errors.full_messages.to_sentence
+* params_hm = {contact:{name:"john doe", email: "jd@john.corp", rmk:"obs...",
+			 address_attributes:{street:"a", city:"a",state:"b"},
+			 phones_attributes:[
+			 	{phone:"85 99999-9999"},
+			 	{phone:"85 98888-8888"},
+			 	{phone:"85 97777-7777"}
+			 ]
+			 }}
