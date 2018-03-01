@@ -39,7 +39,12 @@
       <%= address_fields.select :state, options_for_state(@contact.address.state) %>
     <% end %>
   </div>
-
+  <div id="phones" class="field">
+    <%= link_to_add_association('[Adicionar Telefone]', form, :phones) %>
+    <%= form.fields_for :phones do |phone_fields| %>
+      <%= render partial: "phone_fields", locals: {form: phone_fields} %>
+    <% end %>
+  </div>
   <div class="field">
     <%= form.label :rmk %>
     <%= form.text_area :rmk, id: :contact_rmk %>
