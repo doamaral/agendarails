@@ -1,14 +1,16 @@
 # README
 
-* Insert em uma relação 1:1 => params = {contact:{name:"john doe", email: "jd@john.corp", rmk:"obs...", address_attributes:{street:"a", city:"a",state:"b"}}}
+###ActiveRecord Play around
+* **Insert em uma relação 1:1** => *params* = {contact:{name:"john doe", email: "jd@john.corp", rmk:"obs...", address_attributes:{street:"a", city:"a",state:"b"}}}
 * Comando muito bom para verificar erros no Console:
     creation = Contact.create(params[:contact])
     creation.errors.full_messages.to_sentence
-* Insert em uma relação 1:N => params_hm = {contact:{name:"john doe", email: "jd@john.corp", rmk:"obs...",
-			 address_attributes:{street:"a", city:"a",state:"b"},
-			 phones_attributes:[
-			 	{phone:"85 99999-9999"},
-			 	{phone:"85 98888-8888"},
-			 	{phone:"85 97777-7777"}
-			 ]
-			 }}
+* **Insert em uma relação 1:N** =>
+  params = {contact:{name:"john doe", email: "jd@john.corp", rmk:"obs...",
+      address_attributes:{street:"a", city:"a",state:"b"},
+      phones_attributes:[
+      	{phone:"85 99999-9999"},
+      	{phone:"85 98888-8888"},
+      	{phone:"85 97777-7777"}
+      ]
+  }}
