@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<%= @contacts.count %>
 <h1><%= @contacts.model.model_name.human(count: @contacts.size) %></h1>
 
 <table>
@@ -29,5 +29,3 @@
 <br>
 
 <%= link_to t('button.new'), new_contact_path %>
-<% argb = "Ai..." %>
-<%= render partial: "/contacts/shared/teste", locals:{ vari: argb} %>

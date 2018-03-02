@@ -1,5 +1,14 @@
 # README
-
+## Task de povoamento desenvolvida
+* local: lib/utils.rake
+```
+namespace :utils do
+  desc "Popular Banco de dados da aplicação"
+  task seed: :environment do
+    puts "Iniciando a populaç
+```
+* chamada `rake utils:seed`
+  * `rake namespace:task`
 ## ActiveRecord Playing around
 * **Insert em uma relação 1:1** =>
 ```ruby

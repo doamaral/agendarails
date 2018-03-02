@@ -1,5 +1,5 @@
 class Contact < ApplicationRecord
-  belongs_to :kind
+  belongs_to :kind, optional: true
   has_one :address
   has_many :phones
 
