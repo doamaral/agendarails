@@ -49,5 +49,11 @@ params = {
             }
           }
   ```
-
-_coding_ boy
+## Bugs
+* According to https://github.com/rails/coffee-rails/issues/87 coffe-script-source lost 64-bit windows compatibility since it's 1.9.0 version. Thats why we have to downgrade to 1.8 version:
+Add `gem ‘coffee-script-source’, ‘1.8.0’` ao Gemfile depois `bundle install` depois `bundle update coffee-script-source` ->
+```
+Bundler attempted to update coffee-script-source but its version regressed from 1.12.2 to 1
+.8.0
+Bundle updated!
+```
