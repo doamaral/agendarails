@@ -49,6 +49,10 @@ params = {
             }
           }
   ```
+## Extras
+* Config to a Travis + Heroku Deploy pipeline
+
+
 ## Bugs
 * According to https://github.com/rails/coffee-rails/issues/87 coffe-script-source lost 64-bit windows compatibility since it's 1.9.0 version. Thats why we have to downgrade to 1.8 version:
 Add `gem ‘coffee-script-source’, ‘1.8.0’` ao Gemfile depois `bundle install` depois `bundle update coffee-script-source` ->
