@@ -52,7 +52,7 @@ params = {
   ```
 ## Extras
 * Config to a Travis + Heroku Deploy pipeline
-* Testing Github Issues, closing using commit message
+* Testing Github Issues, closing using commit message, defining Project, cards, milestones... NEAT!
 
 ## Bugs
 * According to https://github.com/rails/coffee-rails/issues/87 coffe-script-source lost 64-bit windows compatibility since it's 1.9.0 version. Thats why we have to downgrade to 1.8 version:
