@@ -9,6 +9,7 @@ namespace :utils do
 ```
 * chamada `rake utils:seed`
   * `rake namespace:task`
+
 ## ActiveRecord Playing around
 * **Insert em uma relação 1:1** =>
 ```ruby
@@ -51,7 +52,7 @@ params = {
   ```
 ## Extras
 * Config to a Travis + Heroku Deploy pipeline
-
+* Testing Github Issues
 
 ## Bugs
 * According to https://github.com/rails/coffee-rails/issues/87 coffe-script-source lost 64-bit windows compatibility since it's 1.9.0 version. Thats why we have to downgrade to 1.8 version:
