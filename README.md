@@ -1,5 +1,9 @@
-# README
-## Task de povoamento desenvolvida
+# Simple Phone book
+![Ruby on Rails](https://d2tycqyw09ngo1.cloudfront.net/be-content/uploads/2017/01/05141844/banner-ruby-on-rails.png "Ruby")
+This app was developed using Ruby on Rails framework, PostgreSQL. It's part of an effort in deepen my Programming skills.
+Bellow are some appointments done during development. 
+
+### Seed task
 * local: lib/utils.rake
 ```
 namespace :utils do
@@ -10,8 +14,8 @@ namespace :utils do
 * chamada `rake utils:seed`
   * `rake namespace:task`
 
-## ActiveRecord Playing around
-* **Insert em uma relação 1:1** =>
+### ActiveRecord Playing around
+* **Insert in a 1:1 relation**
 ```ruby
 params = {
           contact:{
@@ -25,11 +29,11 @@ params = {
             }
           }
 ```
-* Comando muito bom para verificar erros no Console:
+* Checking errors in Console:
     `exemplo = Contact.create(params[:contact])`
     `exemplo.errors.full_messages.to_sentence`
 
-* **Insert em uma relação 1:N** =>
+* **Insert in a 1:N relation**
 
   ```ruby
   params = {
@@ -50,13 +54,13 @@ params = {
             }
           }
   ```
-## Extras
-* Config to a Travis + Heroku Deploy pipeline
-* Testing Github Issues, closing using commit message, defining Project, cards, milestones... NEAT!!!
 
-## Bugs
+### To Do
+* Config to a Travis + Heroku Deploy pipeline
+
+### Bugs
 * According to https://github.com/rails/coffee-rails/issues/87 coffe-script-source lost 64-bit windows compatibility since it's 1.9.0 version. Thats why we have to downgrade to 1.8 version:
-Add `gem ‘coffee-script-source’, ‘1.8.0’` ao Gemfile depois `bundle install` depois `bundle update coffee-script-source` ->
+Add `gem ‘coffee-script-source’, ‘1.8.0’` to Gemfile, after run `bundle install` after run `bundle update coffee-script-source`
 ```
 Bundler attempted to update coffee-script-source but its version regressed from 1.12.2 to 1
 .8.0
